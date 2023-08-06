@@ -1,0 +1,24 @@
+
+.main {
+ background-image: url("https://media.tenor.com/uuhE50hzTRUAAAAd/marvel-studios-what-if.gif") ;
+width: 100vw;
+height: 100vh;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin: 10px;
+box-shadow: black 2px 3px 4px 3px; 
+}
+
+.detail{
+ font-size:18px;
+ text-align: justify;
+ align-items: center;
+ color: #fff;
+ height: 60px;
+}
+
+.detail2{
+border:#fff solid 1px;
+color: #fff;
+}

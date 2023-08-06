@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20%, 20%, 20%, 20%, 20%;
+    grid-template-rows: 20%, 20%, 20%, 20%, 20%;
+    grid-template-areas: 
+    "headr headr headr headr headr"
+    "main main main main main"
+    "main main main main main"
+    "main main main main main"
+    "footr footr footr footr footr"
+}
+
+.headr {
+    width: 100vw;
+    height: 50px;
+    background-color:aliceblue;
+    grid-area: headr;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.headr > div {
+    background-color:rgba(245, 32, 32, 0.491);
+    width: 320px;
+    height: 40px;
+    border: solid black 4px;
+    margin: 1px;
+    font-size: 25px;
+    box-shadow: 6px 2px 10px 4px rgba(0, 0, 0, 0.6);
+    border-radius: 10%;
+}
+
+.main {
+    background-image: url(https://img.wattpad.com/3342ebeceeae0d011aaeb6874df41b35721646b6/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6a67386a30622d346d314c6e72673d3d2d3531343036343735302e3135303439356331323833653361323832343338333639373937322e676966); 
+    grid-area: main;
+}
+
+.footr {
+    background-color: rgb(197, 80, 80);
+    grid-area: footr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

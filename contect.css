@@ -1,0 +1,52 @@
+.main {
+    background-color:hwb(from white h w b);
+     max-width: 600px; 
+     width: 350px;
+     padding: 20px; 
+     border: #000 solid 2px;
+     border-radius: 6%;
+     box-shadow:#333 4px 2px 2px 3px;
+     margin right: 200 px;
+}
+
+form {
+     display: flex;
+     flex-direction: column;
+     justify-self:center;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+    border: #000 solid 2px;
+}

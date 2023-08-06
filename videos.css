@@ -1,0 +1,24 @@
+@media screen and (min-width:600px) 
+{
+    .main { 
+    background-color: #000;
+    width: 1280px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    } 
+
+.main > div {
+    flex-direction:row;
+    margin: 6px;
+    border: 2px solid #fff; 
+    box-shadow: #f5eded 3px 2px 1px 2px;
+    border-radius: 5%; 
+}
+}
+
+@media screen and (max-width:600px) {
+    .main > div {
+            flex-direction:column;
+    }
+}
