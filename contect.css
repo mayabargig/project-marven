@@ -1,19 +1,23 @@
 .main {
-    background-color:hwb(from white h w b);
-     max-width: 600px; 
-     width: 350px;
-     padding: 20px; 
-     border: #000 solid 2px;
-     border-radius: 6%;
-     box-shadow:#333 4px 2px 2px 3px;
-     margin right: 200 px;
-}
+        grid-area: main;
+        display: flex;
+        justify-content: center;
+    }
 
-form {
+.contact {
+     max-width: 600px; 
+     width: 30vw;
+     height: 70vh;
+     padding: 2%; 
+     border: #fff solid 2px;
+     border-radius: 6%;
+     box-shadow:#fff 4px 2px 2px 3px;
      display: flex;
      flex-direction: column;
-     justify-self:center;
-    gap: 10px;
+    gap: 1%;
+    background-color: rgba(19, 18, 18, 0.902);
+    box-shadow: #fff 4px 2px 3px 1px rgba(0, 0, 0, 5);
+    color: #fff;
 }
 
 label {
@@ -50,3 +54,4 @@ button:hover {
     background-color: green;
     border: #000 solid 2px;
 }
+

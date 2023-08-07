@@ -1,54 +1,123 @@
 body {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background-image: url(https://img.buzzfeed.com/buzzfeed-static/static/2021-07/22/15/enhanced/f8987a4a5cd0/anigif_enhanced-8925-1626968822-11.gif);
 }
 
 .container {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 20%, 20%, 20%, 20%, 20%;
-    grid-template-rows: 20%, 20%, 20%, 20%, 20%;
+    grid-template-columns: 20% 20% 20% 20% 20% ; 
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
     grid-template-areas: 
     "headr headr headr headr headr"
     "main main main main main"
     "main main main main main"
     "main main main main main"
+    "main main main main main"
+    "main main main main main"
+    "main main main main main"
+    "main main main main main"
+    "main main main main main"
     "footr footr footr footr footr"
-}
+} 
 
 .headr {
-    width: 100vw;
-    height: 50px;
-    background-color:aliceblue;
     grid-area: headr;
+    background-color: white;
+    width: 100vw;
+    height: 10vh;
+}
+
+.headr-container {
+    width: 100vw;
+    height: 10vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
 }
 
-.headr > div {
-    background-color:rgba(245, 32, 32, 0.491);
+.headr-container > div {
+    background-color:rgba(12, 11, 11, 0.468);
     width: 320px;
     height: 40px;
-    border: solid black 4px;
     margin: 1px;
+    padding: 0.5%;
     font-size: 25px;
-    box-shadow: 6px 2px 10px 4px rgba(0, 0, 0, 0.6);
-    border-radius: 10%;
+    box-shadow: 6px 3px 12px 5px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    color: white;
 }
 
+.headr-container > div:hover {
+    transform: scale(1.1);
+}
+
+  a:link {
+    text-decoration: none; 
+  }
+   a:visited { 
+    color: white;
+  }
+  a:hover { 
+    color: black;
+  }
+   a:active { 
+    color: black;
+  }
+
+
 .main {
-    background-image: url(https://img.wattpad.com/3342ebeceeae0d011aaeb6874df41b35721646b6/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6a67386a30622d346d314c6e72673d3d2d3531343036343735302e3135303439356331323833653361323832343338333639373937322e676966); 
+    background-image: url(https://img.buzzfeed.com/buzzfeed-static/static/2021-07/22/15/enhanced/f8987a4a5cd0/anigif_enhanced-8925-1626968822-11.gif);  
+    width: 100vw;
+    height: 80vh;
     grid-area: main;
 }
 
-.footr {
-    background-color: rgb(197, 80, 80);
-    grid-area: footr;
+.mainhome { 
     display: flex;
+    width: 100vw;
+    height: 80vh;
     justify-content: center;
+    margin-bottom: 3%;
+    justify-content: space-between;
+     background-color: rgba(12, 11, 11, 0.468);
+}
+
+ .mainhome > div { 
+    width: 28vw;
+    height: 60vh;
+    justify-content: center;
+    background-color: rgba(12, 11, 11, 0.468);
+    flex-direction: row;
+    align-items: center; 
+}
+
+@media screen and (max-width:600px) {
+    .main > div {
+            flex-direction:column;
+    }
+}
+
+.footr {
+     width: 100vw;
+     height: 10vh;
+    grid-area: footr;
+    position: fixed;
+    bottom: 0;
+}
+
+.footr-container {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgba(180, 178, 178, 0.763);;
+    display: flex;
+    justify-content: center; 
     align-items: center;
 }
