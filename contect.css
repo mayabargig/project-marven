@@ -55,3 +55,11 @@ button:hover {
     border: #000 solid 2px;
 }
 
+@media screen and (max-width: 600px) {
+    .contact {
+        width:400px ;
+    }
+}
+
+
+
